@@ -7,41 +7,25 @@ html,body {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
-/* Default Page Grid Layout */
-.page {
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
-  grid-template-columns: 1fr 1.4fr 1fr;
-  grid-template-areas: "left-sidebar navbar right-sidebar" "left-sidebar content right-sidebar" "left-sidebar footer right-sidebar";
-}
-
-.left-sidebar {
-  grid-area: left-sidebar;
-}
-
-.right-sidebar {
-  grid-area: right-sidebar;
-}
-
 .content {
-  margin-top: 15vh;
-  background-color: rgba(231, 227, 220, 100);
-  opacity: 0.8;
   font-family: "Avanta Garda";
   font-size: 1em;
-  text-align: center;
-  grid-area: content;
+  opacity: 1.0;
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0;
+  padding-top: 0;
 }
 
-/* Styling for small screens */
-@media (max-width: 576px) {
-  .page {
-    grid-template-columns: 1fr 4fr 1fr;
-  }
+.container
+{
+  height: 100vh;
+  width: 100vw;
+  touch-action: none; /* Allow dragging on the canvas */
 }
 
 /* Styling for high-res mobile screens */
