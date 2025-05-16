@@ -26,6 +26,9 @@ html,body {
   height: 100vh;
   width: 100vw;
   touch-action: none; /* Allow dragging on the canvas */
+  user-select: none; /* Disable Apple long press context */
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /* Styling for high-res mobile screens */
