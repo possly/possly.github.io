@@ -45,13 +45,13 @@ html,body {
 
 .chat-bar-input
 {
-    width: 10vw;
+    width: 50vw;
     height: 5vh;
 }
 
 .chat-bar-submit
 {
-    width: 2vw;
+    width: 5vw;
     height: 5vh;
 }
 
